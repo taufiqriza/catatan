@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Database\Seeders\CatatanProdukSeeder;
-use Database\Seeders\PelangganSeeder;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -23,6 +22,5 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call(CatatanProdukSeeder::class);
-        $this->call(PelangganSeeder::class);
     }
 }

@@ -3,7 +3,6 @@
 namespace App\Filament\Widgets;
 
 use App\Models\CatatanProduk;
-use App\Models\Pelanggan;
 use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 
@@ -28,10 +27,6 @@ class CatatanProdukStats extends BaseWidget
                 ->description('Transaksi yang sudah dibayar')
                 ->descriptionIcon('heroicon-m-check-circle')
                 ->color('success'),
-            Stat::make('Jumlah Pelanggan', Pelanggan::count())
-                ->description('Total pelanggan terdaftar')
-                ->descriptionIcon('heroicon-m-users')
-                ->color('info'),
         ];
     }
 }
